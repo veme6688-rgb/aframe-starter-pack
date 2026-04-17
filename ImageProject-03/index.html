@@ -8,17 +8,20 @@
       <a-assets >
         <img id="Purple" src="IMG_0177.PNG">
         <img id="Blue" src="Galaxy4.png">
+        <img id="orange" src="Galaxy2.png">
+        <img id="red" src="Galaxy5.png">
+        <img id="pink" src="Galaxy6.png">
         <a-asset-item id="planet" src="Sphere.obj"></a-asset-item>
       </a-assets>
 
       <!--<a-entity obj-model="planet" position="0 0 -20" scale="0.5 0.5 0.5" modify-materials></a-entity> -->
 
-      <a-sphere position="0 -200 -200" radius="50" color="#2757F5"></a-sphere>
-      <a-sphere position="100 200 -400" radius="40" src="#Blue"></a-sphere>
-      <a-sphere position="-350 -70 -400" radius="75" src="#Purple"></a-sphere>
-      <a-sphere position="200 125 100" radius="80" color="#2757F5"></a-sphere>
-      <a-sphere position="-100 30 200" radius="65"></a-sphere>
-      <a-sky radius="5000"color="#0B001A"></a-sky> 
+      <a-sphere position="0 -200 -200" radius="50" src="#orange" animation="property: rotation; to: 0 360 0; loop:true; dur:30000; easing:linear"></a-sphere>
+      <a-sphere position="100 200 -400" radius="40" src="#Blue" animation="property: rotation; to: 0 360 0; loop:true; dur:60000; easing:linear"></a-sphere>
+      <a-sphere position="-350 -70 -400" radius="75" src="#Purple" animation="property: rotation; to: 0 -360 0; loop:true; dur:30000; easing:linear"></a-sphere>
+      <a-sphere position="200 125 100" radius="80" src="#red" animation="property: rotation; to: 0 360 0; loop:true; dur:90000; easing:linear"></a-sphere>
+      <a-sphere position="-100 30 200" radius="65" src="#pink" animation="property: rotation; to: 0 360 0; loop:true; dur:30000; easing:linear"></a-sphere>
+      <a-sky radius="5000"src="Stars.png" animation="property: rotation; to: 0 360 0; loop:true; dur:5000000; easing:linear"></a-sky> 
     </a-scene>
   </body>
 </html>
