@@ -11,11 +11,13 @@
         <img id="orange" src="Galaxy2.png">
         <img id="red" src="Galaxy5.png">
         <img id="pink" src="Galaxy6.png">
+        <img id="shipcolor" src="-Color.png"> 
         <a-asset-item id="planet" src="Sphere.obj"></a-asset-item>
+        <a-asset-item id="ship" src="CartoonSpaceShip.obj"> </a-asset-item>
       </a-assets>
 
-      <!--<a-entity obj-model="planet" position="0 0 -20" scale="0.5 0.5 0.5" modify-materials></a-entity> -->
-
+      <a-obj-model src="#ship" position="10 -2 -100" rotation="0 0 -90" src="#pink" animation="property: rotation; to: 0 -360 -360; loop:true; dur:30000; easing:linear"></a-obj-model>
+      
       <a-sphere position="0 -200 -200" radius="50" src="#orange" animation="property: rotation; to: 0 360 0; loop:true; dur:30000; easing:linear"></a-sphere>
       <a-sphere position="100 200 -400" radius="40" src="#Blue" animation="property: rotation; to: 0 360 0; loop:true; dur:60000; easing:linear"></a-sphere>
       <a-sphere position="-350 -70 -400" radius="75" src="#Purple" animation="property: rotation; to: 0 -360 0; loop:true; dur:30000; easing:linear"></a-sphere>
